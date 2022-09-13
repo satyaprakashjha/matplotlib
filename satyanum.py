@@ -172,6 +172,53 @@ arr = np.concatenate((arr1, arr2))
 print(arr)
 
 
+# sorting Arrays
+
+import numpy as np
+arr = np.array([3,2,0,1])
+print(np.sort(arr))
+
+import numpy as np
+arr = np.array(["banana", "kiwi", "lemon", "apple"])
+print(np.sort(arr))
+
+#sorting 2 D array
+import numpy as np
+arr = np.array([[3,2,0,1],[9,0,7,5]])
+print(np.sort(arr))
+
+
+#filter arrays
+import numpy as np
+arr = np.array([41,42,43,44])
+x = [True, False, True, False]
+newarr = arr[x]
+print(np.sort(newarr))
+
+#Create a filter array return values higher than 42:
+
+import numpy as np
+
+arr = np.array([41,42,43,44,45])
+# create an empty list
+
+filter_arr = []
+
+#go through each element in arr
+
+for element in arr:
+    if element > 42:
+        filter_arr.append(True)
+    else:
+        filter_arr.append(False)
+
+newarr = arr[filter_arr]
+print(filter_arr)
+print(newarr)
+
+
+
+
 
 
 
